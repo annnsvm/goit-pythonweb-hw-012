@@ -6,7 +6,7 @@ from sqlalchemy import Sequence
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.database.models import Contact, User
-from src.repository.contacts import ContactRepository
+from src.repositories.contacts import ContactRepository
 from src.schemas import ContactBase
 
 

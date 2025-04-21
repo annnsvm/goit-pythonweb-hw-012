@@ -5,7 +5,7 @@ import pytest
 from sqlalchemy import select
 
 from src.database.models import User
-from src.services.utils.str_to_email_str import str_to_email_str
+from src.services.utils.str_to_email import str_to_email_str
 from tests.conftest import TestingSessionLocal, test_admin_user
 
 user_data = {

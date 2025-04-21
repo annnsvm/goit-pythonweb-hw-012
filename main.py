@@ -5,7 +5,7 @@ Main Module
 from fastapi import FastAPI, status, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.api import utils, contacts, auth, users
+from src.routes import utils, contacts, auth, users
 from slowapi.errors import RateLimitExceeded
 from starlette.responses import JSONResponse
 

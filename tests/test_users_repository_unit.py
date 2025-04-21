@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock, MagicMock
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.database.models import Contact, User
-from src.repository.users import UserRepository
+from src.repositories.users import UserRepository
 
 
 @pytest.fixture
