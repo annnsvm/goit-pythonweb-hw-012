@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "goit-pythonweb-hw-12"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anna Samoilova",email = "samoilova0299@gmail.com"}
+]
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.11"}
+sqlalchemy = "^2.0.39"
+alembic = "^1.15.1"
+asyncpg = "^0.30.0"
+pydantic-settings = "^2.8.1"
+redis = "^5.2.1"
+pyjwt = "^2.10.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+apscheduler = "^3.11.0"
+slowapi = "^0.1.9"
+fastapi-mail = "^1.4.2"
+libgravatar = "^1.0.4"
+cloudinary = "^1.43.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pytest-cov = "^6.0.0"
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+aiosqlite = "^0.21.0"
+sphinx = "^8.2.3"
+sphinx-rtd-theme = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
